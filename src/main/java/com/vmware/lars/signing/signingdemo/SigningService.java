@@ -18,7 +18,7 @@ public class SigningService {
     private final KeyVaultClient keyvaultClient;
     private final String keyIdentifier;
 
-    public SigningService(KeyVaultClient keyvaultClient, @Value("${keyIdentifier}") String keyIdentifier) {
+    public SigningService(KeyVaultClient keyvaultClient, @Value("${kid}") String keyIdentifier) {
         this.keyvaultClient = keyvaultClient;
         this.keyIdentifier = keyIdentifier;
     }

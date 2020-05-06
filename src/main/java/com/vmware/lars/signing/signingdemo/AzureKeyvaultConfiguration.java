@@ -14,8 +14,9 @@ public class AzureKeyvaultConfiguration {
     private final String keyVaultClientId;
     private final String keyVaultClientSecret;
 
-    public AzureKeyvaultConfiguration(@Value("${keyvaultClientId}") String keyVaultClientId,
-            @Value("${keyvaultClientSecretId}") String keyVaultClientSecret) {
+    public AzureKeyvaultConfiguration(@Value("${clientId}") String keyVaultClientId,
+            @Value("${clientSecret}") String keyVaultClientSecret) {
+                
         this.keyVaultClientId = keyVaultClientId;
         this.keyVaultClientSecret = keyVaultClientSecret;
     }
