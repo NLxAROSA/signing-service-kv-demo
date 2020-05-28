@@ -1,10 +1,10 @@
 #!/bin/bash
 
-RESOURCE_GROUP="yourSigningDemoResourceGroup"
+RESOURCE_GROUP="yourSigningDemoResourceGroupHere"
 RESOURCE_GROUP_REGION="EastUS"
-KEYVAULT_NAME="yourSigningDemoKeyvault"
-SP_NAME="http://yourSigningDemoKeyvaultSP"
-KEY_NAME="yourkey"
+KEYVAULT_NAME="yourSigningDemoKeyvaultHere"
+SP_NAME="http://yourSigningDemoKeyvaultSPHere"
+KEY_NAME="yourkeyHere"
 
 echo "Creating resource group..."
 az group create -n $RESOURCE_GROUP -l $RESOURCE_GROUP_REGION

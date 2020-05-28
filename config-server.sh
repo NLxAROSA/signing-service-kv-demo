@@ -1,0 +1,1 @@
+cf config-server-add-credhub-secret my-config-server signing-demo/cloud/master/myprop '{"kid":"yourkidhere","clientId":"yourClientIdHere","clientSecret":"yourClientSecretHere"}'
