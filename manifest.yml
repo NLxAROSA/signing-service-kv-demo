@@ -1,0 +1,5 @@
+---
+applications:
+  - name: signing-service-kv
+    random-route: true
+    path: target/signingdemo-0.0.1-SNAPSHOT.jar
