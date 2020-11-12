@@ -26,7 +26,7 @@ public class SigningService {
     public byte[] signMessage(String message) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
         messageDigest.update(message.getBytes("UTF-8"));
-        KeyOperationResult keyOperationResult = keyvaultClient.sign(keyIdentifier, JsonWebKeySignatureAlgorithm.RSNULL, messageDigest.digest());
+        KeyOperationResult keyOperationResult = keyvaultClient.sign(keyIdentifier, JsonWebKeySignatureAlgorithm.RS256, messageDigest.digest());
         return keyOperationResult.result();
     }
 
